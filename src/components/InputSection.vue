@@ -10,7 +10,7 @@
     </v-alert>
     <h3 class="text-h4 text-center mt-16">Paste Your URL to be Shortend</h3>
     <div class="url-area d-flex">
-    <v-text-field v-model="url" label="Enter Url Here." single-line outlined></v-text-field>
+    <v-text-field v-model="url" label="Enter Url Here." single-line outlined @change="getShortenUrl"></v-text-field>
     <v-btn @click="getShortenUrl" :loading="loading"
        depressed class="py-7 ml-n1 " color="primary"> Shrink URL </v-btn>
 </div>
